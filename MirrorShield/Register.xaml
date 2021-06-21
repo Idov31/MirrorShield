@@ -1,0 +1,25 @@
+﻿<Window x:Class="MirrorShield.Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MirrorShield"
+        mc:Ignorable="d"
+        Title="MirrorShield || Register" Height="519" Width="400"
+        Icon="Pictures/Icon.ico">
+    <Canvas Background="#2A2F3C">
+        <Canvas>
+            <Image Source="Pictures/Logo.png" Width="391"></Image>
+        </Canvas>
+        <TextBlock Canvas.Left="10" Canvas.Top="132" FontSize="20" Foreground="Gold">Username:</TextBlock>
+        <TextBox Canvas.Left="108" Canvas.Top="132" Width="199" Foreground="Red" Background="#1A1D24" BorderBrush="#0D0D0D" Height="27" FontSize="18" Name="uname"></TextBox>
+        <TextBlock Canvas.Left="10" Canvas.Top="197" FontSize="20" Foreground="Gold">Password:</TextBlock>
+        <PasswordBox Canvas.Left="108" Canvas.Top="197" Width="199" Foreground="Red" Background="#1A1D24" BorderBrush="#0D0D0D" Height="27" FontSize="18" Name="psw"></PasswordBox>
+        <TextBlock Canvas.Left="10" Canvas.Top="268" FontSize="20" Foreground="Gold">Repeat:</TextBlock>
+        <PasswordBox Canvas.Left="108" Canvas.Top="268" Width="199" Foreground="Red" Background="#1A1D24" BorderBrush="#0D0D0D" Height="27" FontSize="18" Name="rpsw"></PasswordBox>
+        <TextBlock Canvas.Left="10" Canvas.Top="331" FontSize="20" Foreground="Gold">Mail:</TextBlock>
+        <TextBox Canvas.Left="108" Canvas.Top="331" Width="199" Foreground="Red" Background="#1A1D24" BorderBrush="#0D0D0D" Height="27" FontSize="18" Name="mail"></TextBox>
+        <TextBlock Canvas.Left="96" Canvas.Top="457" FontSize="16" Foreground="Gold" Name="errors"></TextBlock>
+        <Button Canvas.Left="131" Canvas.Top="398" Width="111" Height="53" Name="register" Click="Register_Click" Background="#2A2F3C" Foreground="Gold" BorderBrush="#1A1D24" BorderThickness="1" FontSize="14">Register</Button>
+    </Canvas>
+</Window>

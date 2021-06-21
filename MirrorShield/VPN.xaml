@@ -1,0 +1,27 @@
+﻿<Window x:Class="MirrorShield.VPN"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MirrorShield"
+        mc:Ignorable="d"
+        Title="MirrorShield || VPN" Height="339.573" Width="589.337"
+        Icon= "Pictures/Icon.ico">
+    <Canvas Background="#1A1D24">
+        <Image Source="Pictures/Logo.png" Height="112" Width="526" Canvas.Left="10"/>
+        <TextBlock Canvas.Left="10" Canvas.Top="143" Foreground="Gold" FontSize="14">Your IP:</TextBlock>
+        <TextBlock Canvas.Left="113" Canvas.Top="143" Foreground="Red" FontSize="14" Name="realip">Your IP right here</TextBlock>
+        <TextBlock Canvas.Left="10" Canvas.Top="193" Foreground="Gold" FontSize="14">Your friend IP:</TextBlock>
+        <TextBlock Canvas.Left="113" Canvas.Top="193" Foreground="Red" FontSize="14" Name="friendip">Friend IP right here</TextBlock>
+        <Button Canvas.Left="232" Canvas.Top="266" Foreground="Gold" Background="#1A1D24" BorderBrush="#2A2F3C" Height="34" Width="76" FontSize="14" Click="Stop_Click">Stop VPN</Button>
+        <TextBlock Foreground="Gold" FontSize="14" Canvas.Left="323" Canvas.Top="128">Your friend IP:</TextBlock>
+        <TextBox Canvas.Left="427" Canvas.Top="129" Width="122" Name="fip" Background="#1A1D24" BorderBrush="Black" Foreground="Red" />
+        <TextBlock Foreground="Gold" FontSize="14" Canvas.Left="323" Canvas.Top="162" >Your friend port:</TextBlock>
+        <TextBox Canvas.Left="428" Canvas.Top="163" Width="108" Background="#1A1D24" BorderBrush="Black" Foreground="Red" Name="fp"/>
+        <TextBlock Canvas.Left="323" Canvas.Top="197" Foreground="Gold" FontSize="14">Your port:</TextBlock>
+        <TextBox Background="#1A1D24" BorderBrush="Black" Foreground="Red" Width="108" Canvas.Left="428" Canvas.Top="197" Name="sp" />
+        <Button Canvas.Left="456" Canvas.Top="230" Width="58" Foreground="Gold" Background="#1A1D24" BorderBrush="#2A2F3C" Click="Apply_Click">Apply</Button>
+        <TextBlock Canvas.Left="162" Canvas.Top="245" Foreground="Red">Your connection is secured by</TextBlock>
+        <TextBlock Canvas.Top="245" Foreground="Gold" Canvas.Left="323">MIRRORSHIELD</TextBlock>
+    </Canvas>
+</Window>

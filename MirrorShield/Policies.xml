@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Rules>
+  <Rule Index="1">
+    <SourceIP></SourceIP>
+    <SourcePort>Enter spesific Port/Any</SourcePort>
+    <DestinationPort>Enter spesific Port/Any</DestinationPort>
+    <DestinationIP>Enter spesific IP/ Any</DestinationIP>
+    <Direction>Inbound/Outbound/Any</Direction>
+    <Action>Allow / Deny / VPN</Action>
+    <DeviceA>1 / 2 / 3</DeviceA>
+    <DeviceB>1 / 2 / 3</DeviceB>
+  </Rule>
+  <Rule Index="2">
+    <SourceIP>Any</SourceIP>
+    <SourcePort>Any</SourcePort>
+    <DestinationPort>Any</DestinationPort>
+    <DestinationIP>Any</DestinationIP>
+    <Direction>Any</Direction>
+    <Action>VPN</Action>
+    <DeviceA>2</DeviceA>
+    <DeviceB>3</DeviceB>
+  </Rule>
+  <Rule Index="3">
+    <SourceIP>Any</SourceIP>
+    <SourcePort>Any</SourcePort>
+    <DestinationPort>Any</DestinationPort>
+    <DestinationIP>Any</DestinationIP>
+    <Direction>Any</Direction>
+    <Action>VPN</Action>
+    <DeviceA>2</DeviceA>
+    <DeviceB>3</DeviceB>
+  </Rule>
+  <Rule Index="4">
+    <SourceIP></SourceIP>
+    <SourcePort>Enter spesific Port/Any</SourcePort>
+    <DestinationPort>Enter spesific Port/Any</DestinationPort>
+    <DestinationIP>Enter spesific IP/ Any</DestinationIP>
+    <Direction>Inbound/Outbound/Any</Direction>
+    <Action>Allow / Deny / VPN</Action>
+    <DeviceA>1 / 2 / 3</DeviceA>
+    <DeviceB>1 / 2 / 3</DeviceB>
+  </Rule>
+</Rules>

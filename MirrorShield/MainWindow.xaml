@@ -1,0 +1,42 @@
+﻿<Window x:Class="MirrorShield.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MirrorShield"
+        mc:Ignorable="d"
+        Title="MirrorShield || Portal" Height="488.333" Width="862.333"
+        Icon= "Pictures/Icon.ico">
+    <Canvas Background="#2A2F3C">
+        <Canvas Background="#1A1D24" Height="65" Width="854">
+            <Button Height="32" Width="83" Canvas.Left="262" Canvas.Top="33" Name="login" Click="Login_Click" Background="#2A2F3C" Foreground="Gold" BorderBrush="#2A2F3C" BorderThickness="2" MouseEnter="Login_In" MouseLeave="Login_Out" FontSize="14">Login</Button>
+            <Button Height="32" Width="76" Background="#2A2F3C" Foreground="Gold" BorderBrush="#2A2F3C" BorderThickness="2" MouseEnter="Exit_In" MouseLeave="Exit_Out" Canvas.Left="514" Canvas.Top="33" Name="exit" Click="Exit_Click" FontSize="14">Exit</Button>
+            <Button Height="32" Width="77" Background="#2A2F3C" Foreground="Gold" BorderBrush="#2A2F3C" BorderThickness="2" MouseEnter="Register_In" MouseLeave="Register_Out" Canvas.Left="350" Canvas.Top="33" Name="register" Click="Register_Click" FontSize="14">Register</Button>
+            <TextBlock Canvas.Left="664" Foreground="Gold" Canvas.Top="42" Height="22" FontSize="17">Welcome,</TextBlock>
+            <TextBlock Canvas.Left="737" Foreground="Red" Canvas.Top="42" FontSize="17" Name="uname">Username!</TextBlock>
+            <Image Source="Pictures/Logo.png" Height="65"></Image>
+            <Button Height="32" Width="77" Background="#2A2F3C" Foreground="Gold" BorderBrush="#2A2F3C" BorderThickness="2" MouseEnter="Guild_In" MouseLeave="Guild_Out" Canvas.Left="432" Canvas.Top="33" Name="guild" Click="Guild_Click" FontSize="14" Content="Guide"/>
+        </Canvas>
+        <TextBlock Background="Gold" Width="2" Canvas.Left="592" Canvas.Top="65" Height="397"></TextBlock>
+        <Canvas Background="#1f1f2e" Width="258" RenderTransformOrigin="0.48,0.501" Canvas.Left="596" Canvas.Top="65" Height="392">
+            <TextBlock FontSize="20" Foreground="Gold" >Logs</TextBlock>
+            <ListBox Name="logslb" Height="360" Background="#1f1f2e" Width="249" BorderBrush="Transparent" FontSize="16" Foreground="Red" Canvas.Top="32">
+
+            </ListBox>
+        </Canvas>
+        <Image Source="Pictures/Firewall_Symbol.png" Height="129" Width="170" Canvas.Left="49" Canvas.Top="70"></Image>
+        <Image Source="Pictures/VPN_Symbol.png" Canvas.Left="309" Canvas.Top="57" Height="167" Width="189"></Image>
+        <TextBlock Canvas.Left="309" Canvas.Top="199" FontSize="16" Foreground="Gold">VPN status:</TextBlock>
+        <TextBlock Canvas.Left="309" Canvas.Top="229" FontSize="16" Foreground="Gold">Last time activated:</TextBlock>
+        <TextBlock FontSize="16" Foreground="Red" Canvas.Left="164" Canvas.Top="225" Name="datefw">31/10/2000</TextBlock>
+        <TextBlock FontSize="16" Foreground="Green" Canvas.Left="394" Canvas.Top="199" Name="statusvpn">Offline</TextBlock>
+        <Button Canvas.Left="309" Canvas.Top="257" Width="100" Height="30" Background="#2A2F3C" Foreground="Gold" BorderBrush="#1A1D24" BorderThickness="1" FontSize="14" MouseEnter="ActiveVPN_In" MouseLeave="ActiveVPN_Out" Name="activevpn" Click="ActiveVPN_Click">Active</Button>
+        <Button Canvas.Left="145" Canvas.Top="257" Width="100" Height="30" Background="#2A2F3C" Foreground="Gold" BorderBrush="#1A1D24" BorderThickness="1" FontSize="14" MouseEnter="DisactiveFW_In" MouseLeave="DisactiveFW_Out" Name="disactivefw" Click="DisactiveFW_Click">Disconnect</Button>
+        <TextBlock Canvas.Left="23" Canvas.Top="199" FontSize="16" Foreground="Gold">Firewall status:</TextBlock>
+        <TextBlock FontSize="16" Foreground="Green" Canvas.Left="136" Canvas.Top="199" Name="statusfw">Offline</TextBlock>
+        <TextBlock Canvas.Left="23" Canvas.Top="225" FontSize="16" Foreground="Gold">Last time activated:</TextBlock>
+        <TextBlock FontSize="16" Foreground="Red" Canvas.Left="449" Canvas.Top="229" Name="datevpn">17/10/2000</TextBlock>
+        <Button Canvas.Left="26" Canvas.Top="257" Width="100" Height="30" Background="#2A2F3C" Foreground="Gold" BorderBrush="#1A1D24" BorderThickness="1" FontSize="14" MouseEnter="ActiveFW_In" MouseLeave="ActiveFW_Out" Name="activefw" Click="ActiveFW_Click">Active</Button>
+        <Button Canvas.Left="428" Canvas.Top="257" Width="100" Height="30" Background="#2A2F3C" Foreground="Gold" BorderBrush="#1A1D24" BorderThickness="1" FontSize="14" MouseEnter="DisactiveVPN_In" MouseLeave="DisactiveVPN_Out" Name="disactivevpn" Click="DisactiveVPN_Click">Disconnect</Button>
+    </Canvas>
+</Window>

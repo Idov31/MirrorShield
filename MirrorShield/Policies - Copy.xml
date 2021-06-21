@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Rules>
+
+  <Rule Index="1" SourceIP="Any" SourcePort="Any" DestinationIP="Any" DestinationPort="Any" Direction="Any" Action="Deny" DeviceA="1" DeviceB="2">
+  </Rule>
+
+  <Rule Index="2" SourceIP="" SourcePort="" DestinationIP="" DestinationPort="" Direction="" Action="" DeviceA="" DeviceB="">
+  </Rule>
+
+  <Rule Index="3" SourceIP="" SourcePort="" DestinationIP="" DestinationPort="" Direction="" Action="" DeviceA="" DeviceB="">
+  </Rule>
+
+  <Rule Index="4" SourceIP="" SourcePort="" DestinationIP="" DestinationPort="" Direction="" Action="" DeviceA="" DeviceB="">
+  </Rule>
+
+  <Rule Index="5" SourceIP="" SourcePort="" DestinationIP="" DestinationPort="" Direction="" Action="" DeviceA="" DeviceB="">
+  </Rule>
+
+  <Rule Index="6" SourceIP="" SourcePort="" DestinationIP="" DestinationPort="" Direction="" Action="" DeviceA="" DeviceB="">
+  </Rule>
+
+  <Rule Index="7" SourceIP="" SourcePort="" DestinationIP="" DestinationPort="" Direction="" Action="" DeviceA="" DeviceB="">
+  </Rule>
+
+  <Rule Index="8" SourceIP="" SourcePort="" DestinationIP="" DestinationPort="" Direction="" Action="" DeviceA="" DeviceB="">
+  </Rule>
+
+  <Rule Index="9" SourceIP="" SourcePort="" DestinationIP="" DestinationPort="" Direction="" Action="" DeviceA="" DeviceB="">
+  </Rule>
+
+</Rules>

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph ZoomLevel="1.5" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Client" Category="Category5" Bounds="-167,-32,50.3766666666667,25.96" UseManualLocation="True" />
+    <Node Id="ConThread" Category="Category5" Bounds="-60.1063554382325,-29.0000004577637,77.95,25.96" Label="ConThread" UseManualLocation="True" />
+    <Node Id="Config" Category="Comment" Bounds="-283.282887703971,100.0550488829,54.98,25.96" UseManualLocation="True">
+      <Category Ref="Category3" />
+    </Node>
+    <Node Id="DBManagment" Category="Comment" Bounds="286.260853804175,-29.998645936758,99.61,25.96" UseManualLocation="True">
+      <Category Ref="Category5" />
+    </Node>
+    <Node Id="Firewall" Category="Category2" Bounds="-134,-129,59.81,25.96" UseManualLocation="True" />
+    <Node Id="Guide" Category="Category9" Bounds="54.8516457621256,-128.991535644531,51.2733333333333,25.96" UseManualLocation="True">
+      <Category Ref="Category2" />
+    </Node>
+    <Node Id="Indexs" Category="Category1" Bounds="120.651702742979,53.2173327665192,53.9266666666667,25.96" UseManualLocation="True" />
+    <Node Id="Login" Category="Category1" Bounds="191.408213571679,-125.992214660645,50,25.96" UseManualLocation="True">
+      <Category Ref="Category2" />
+    </Node>
+    <Node Id="Logs" Category="Category1" Bounds="167.141208752852,-55.5081248372167,50,25.96" UseManualLocation="True" />
+    <Node Id="MainWindow" Category="Category9" Bounds="23.991875620547,-242.998645936758,90.2566666666667,25.96" UseManualLocation="True" />
+    <Node Id="Policies" Category="Category1" Bounds="47.8436445617676,-53.500637512207,58.94,25.96" UseManualLocation="True" />
+    <Node Id="Policy" Category="Category5" Bounds="-111,47.0942718512787,50.47,25.96" UseManualLocation="True" />
+    <Node Id="Register" Category="Category9" Bounds="317.117928645654,-125.992217416572,62.6866666666667,25.96" UseManualLocation="True">
+      <Category Ref="Category2" />
+    </Node>
+    <Node Id="Server" Category="Category5" Bounds="-273.019999999598,-36.0000004577637,53.02,25.96" UseManualLocation="True" />
+    <Node Id="Session" Category="Category5" Bounds="26,52,59.5633333333333,25.96" UseManualLocation="True" />
+    <Node Id="VPN" Category="Category2" Bounds="-25.1483542378744,-130.747803192139,50,25.96" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="Client" Target="Server" Bounds="-211.007431030273,-18.5607452392578,44.0074310302734,1.64598846435547" />
+    <Link Source="ConThread" Target="Firewall" Bounds="-86.5120010375977,-95.9108200073242,57.6385631561279,66.9108200073242" />
+    <Link Source="ConThread" Target="Session" Bounds="-8.80628110144708,-3.0400004577637,46.0656945428866,48.5135179576222" />
+    <Link Source="Firewall" Target="ConThread" Bounds="-99.5966033935547,-103.040000915527,56.5628242492676,67.3794708251953" />
+    <Link Source="Firewall" Target="Policy" Bounds="-102.743886204539,-103.04,14.6959791160742,141.182637293327" />
+    <Link Source="Firewall" Target="VPN" Bounds="-74.19,-117.196134093011,40.0429177545748,0.673298680884471" />
+    <Link Source="Indexs" Target="Logs" Bounds="152.930715900332,-21.2194799939552,30.4839956668092,74.4368127604744" />
+    <Link Source="Indexs" Target="Policies" Bounds="90.8154119769314,-20.024866622329,48.2489361554902,73.2421993888482" />
+    <Link Source="Login" Target="DBManagment" Bounds="232.588007996243,-100.032214660645,80.2778959802096,64.4017508801707" />
+    <Link Source="Login" Target="MainWindow" Bounds="96.4532165527344,-212.659332275391,102.163497924805,86.6671142578125" />
+    <Link Source="Login" Target="Register" Bounds="241.408213571679,-113.012216574613,66.709715073975,1.39222157713448E-06" />
+    <Link Source="Logs" Target="MainWindow" Bounds="82.5743298474227,-209.513852922651,101.050114601687,154.005728085434" />
+    <Link Source="MainWindow" Target="Firewall" Bounds="-76.8546116742895,-217.038645936758,126.252363455576,83.0908473174734" />
+    <Link Source="MainWindow" Target="Guide" Bounds="70.4144965007371,-217.038645936758,7.88653100296492,79.0915223337248" />
+    <Link Source="MainWindow" Target="Login" Bounds="76.3024520874023,-217.038650512695,118.357231140137,82.4488830566406" />
+    <Link Source="MainWindow" Target="Register" Bounds="100.108650479043,-217.038645936758,210.131596962973,88.0169506544777" />
+    <Link Source="MainWindow" Target="VPN" Bounds="12.587770062358,-217.038645936758,48.5226464637316,78.6317444274839" />
+    <Link Source="Policies" Target="Firewall" Bounds="-66.7447858090833,-100.475441100898,115.331024730871,47.99891903321" />
+    <Link Source="Policy" Target="Session" Bounds="-60.53,60.9488671543565,77.5354004399739,2.68722397650308" />
+    <Link Source="Register" Target="DBManagment" Bounds="338.89450900862,-100.032217416572,7.89067867999148,61.107678731437" />
+    <Link Source="Server" Target="Client" Bounds="-220,-24.9316005706787,44.0056915283203,1.69285202026367" />
+    <Link Source="VPN" Target="Client" Bounds="-115.807324918954,-104.787803192139,97.0379002786541,67.6412213904113" />
+    <Link Source="VPN" Target="Server" Bounds="-211.607351361389,-108.153096077175,186.458997123515,71.7099458516973" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="Category 1" Background="#FFE51400" IsTag="True" />
+    <Category Id="Category2" Label="Category 2" Background="#FF339933" IsTag="True" />
+    <Category Id="Category3" Label="Category 3" Background="#FF3EBCED" IsTag="True" />
+    <Category Id="Category5" Label="Category 5" Background="#FF9B4F96" IsTag="True" />
+    <Category Id="Category9" Label="Category 9" Background="#FF00539C" IsTag="True" />
+    <Category Id="Comment" Label="Comment" Description="Represents a user defined comment on the diagram" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="Comments" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="Background" Description="The background color" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Category 3" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category3')" />
+      <Setter Property="Background" Value="#FF3EBCED" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Category 6" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category6')" />
+      <Setter Property="Background" Value="#FFA1260D" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Category 5" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category5')" />
+      <Setter Property="Background" Value="#FF9B4F96" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Category 2" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category2')" />
+      <Setter Property="Background" Value="#FF339933" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Category 9" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category9')" />
+      <Setter Property="Background" Value="#FF00539C" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Category 1" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Comment" ValueLabel="Has comment">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

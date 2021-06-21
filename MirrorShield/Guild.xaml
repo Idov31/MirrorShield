@@ -1,0 +1,32 @@
+﻿<Window x:Class="MirrorShield.Guild"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MirrorShield"
+        mc:Ignorable="d"
+        Title="MirrorShield || Guide" Height="569.416" Width="465"
+         Icon= "Pictures/Icon.ico">
+    <Canvas  Background="#1A1D24">
+        <Image Source="Pictures/Logo.png" Height="150" Width="392" Canvas.Left="32" />
+        <TextBlock Canvas.Left="293" Canvas.Top="135" Foreground="Red" FontSize="14">:Firewall הוראות יצירה של</TextBlock>
+        <TextBlock Canvas.Top="159" Width="417" Canvas.Left="35" Text="ששולח את המידע. יכול להיות כל אחד IPא. נא להזין בשורה הראשונה את כתובת ה" Foreground="#FFF53F3F"/>
+        <TextBlock Canvas.Left="347" Canvas.Top="175" Foreground="#FFF53F3F">. ויכול להיות ספציפי</TextBlock>
+        <TextBlock Canvas.Left="20" Canvas.Top="196" Foreground="#FFF53F3F">ב. נא להזין בשורה השנייה את הפורט של שולח המידע.  יכול להיות כל אחד ויכול להיות</TextBlock>
+        <TextBlock Canvas.Left="402" Canvas.Top="217" Foreground="#FFF53F3F">.ספציפי</TextBlock>
+        <TextBlock Canvas.Top="238" Width="417" Canvas.Left="35" Text="שמקבל את המידע. יכול להיות כל אחד IPג. נא להזין בשורה השלישית את כתובת ה" Foreground="#FFF53F3F"/>
+        <TextBlock Canvas.Left="347" Canvas.Top="254" Foreground="#FFF53F3F"><Run Text=". ויכול להיות ספציפי"/></TextBlock>
+        <TextBlock Canvas.Top="275" Canvas.Left="12" Foreground="#FFF53F3F"><Run Text="ד. נא להזין בשורה הרביעית את הפורט של מקבל המידע. יכול להיות כל אחד ויכול להיות"/></TextBlock>
+        <TextBlock Canvas.Left="349" Canvas.Top="291" Foreground="#FFF53F3F"><Run Text=". ויכול להיות ספציפי"/></TextBlock>
+        <TextBlock Canvas.Left="6" Canvas.Top="312" Foreground="#FFF53F3F">ה. נא להזין בשורה החמישית את כיוון התקשורת המבוקש. יכול להיות כל אחד ויכול להיות</TextBlock>
+        <TextBlock Canvas.Left="402" Canvas.Top="328" Foreground="#FFF53F3F"><Run Text=".ספציפי"/></TextBlock>
+        <TextBlock Canvas.Left="77" Canvas.Top="354" Foreground="#FFF53F3F">.VPNו. נא להזין את הפעולה המתבקשת: להרשות או לאסור או להשתמש ב</TextBlock>
+        <TextBlock Canvas.Left="166" Canvas.Top="378" Foreground="#FFF53F3F">.ז. נא להזין את כרטיס הרשת הראשון עליו תרצה/י להאזין</TextBlock>
+        <TextBlock Canvas.Left="176" Canvas.Top="399" Foreground="#FFF53F3F"><Run Text=".ט. נא להזין את כרטיס הרשת השני עליו תרצה/י להאזין"/></TextBlock>
+        <TextBlock Canvas.Left="199" Canvas.Top="422" Foreground="#FFF53F3F">.Submitי. כעת כאשר סיימת נא ללחוץ על כפתור ה</TextBlock>
+        <TextBlock Canvas.Left="291" Canvas.Top="451" Foreground="Red" FontSize="14">:Firewall הוראות שימוש של</TextBlock>
+        <TextBlock Canvas.Left="100" Canvas.Top="475" Foreground="#FFF53F3F">.א. נא לבחור את הגדרות ההגנה באמצעות לחיצה על המדיניות הרצויה</TextBlock>
+        <TextBlock Canvas.Left="16" Canvas.Top="496" Foreground="#FFF53F3F">ב. נא להפעיל את ההגנה על המחשב באמצעות הגדרת ההגדרה שנבחרה ע"י לחיצה על</TextBlock>
+        <TextBlock Canvas.Left="377" Canvas.Top="512" Foreground="#FFF53F3F">.Activeכפתור ה</TextBlock>
+    </Canvas>
+</Window>

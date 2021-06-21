@@ -1,0 +1,40 @@
+﻿<Window x:Class="MirrorShield.Firewall"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MirrorShield"
+        mc:Ignorable="d"
+        Title="Mirror Shield || Firewall" Height="701" Width="1174"
+        Icon= "Pictures/Icon.ico">
+    <Canvas Background="#1A1D24">
+        <TextBlock Canvas.Top="137" Foreground="Gold" Canvas.Left="10" FontSize="20"> Choose a policy:</TextBlock>
+        <Button Canvas.Left="10" Canvas.Top="616" Foreground="Gold" Background="#1A1D24" BorderBrush="#2A2F3C" Height="34" Width="76" FontSize="18" Click="Active_Click">Active</Button>
+        <TextBlock Canvas.Left="1011" Canvas.Top="21" Foreground="Red" FontSize="16" Name="time"> Time will be here</TextBlock>
+        <TextBlock Foreground="Gold" FontSize="18" Canvas.Left="868" Canvas.Top="18">Connection time:</TextBlock>
+        <TextBlock Foreground="Gold"  FontSize="20" Canvas.Left="983" Canvas.Top="134">Create a policy:</TextBlock>
+        <TextBlock Foreground="Gold"  FontSize="16" Canvas.Top="168" Canvas.Left="983">Source IP:</TextBlock>
+        <TextBox Canvas.Top="194" Canvas.Left="983" Width="162" Background="#1A1D24" BorderBrush="Black" Foreground="Red" FontSize="16" Name="sip" GotKeyboardFocus="IP_GotKeyboardFocus">Enter spesific IP/ Any</TextBox>
+        <TextBlock Foreground="Gold"  FontSize="16" Canvas.Top="222" Canvas.Left="983">Destination IP:</TextBlock>
+        <TextBox Canvas.Top="248" Canvas.Left="983" Width="162" Background="#1A1D24" BorderBrush="Black" Foreground="Red" FontSize="16" Name="dip" GotKeyboardFocus="IP_GotKeyboardFocus">Enter spesific IP/ Any</TextBox>
+        <TextBlock Foreground="Gold"  FontSize="16" Canvas.Top="276" Canvas.Left="984">Source Port:</TextBlock>
+        <TextBox Canvas.Top="302" Canvas.Left="983" Width="162" Background="#1A1D24" BorderBrush="Black" Foreground="Red" FontSize="16" Name="sp" GotKeyboardFocus="Port_GotKeyboardFocus">Enter spesific Port/Any</TextBox>
+        <TextBlock Foreground="Gold"  FontSize="16" Canvas.Top="330" Canvas.Left="983">Destination Port:</TextBlock>
+        <TextBox Canvas.Top="356" Canvas.Left="983" Width="162" Background="#1A1D24" BorderBrush="Black" Foreground="Red" FontSize="16" Name="dp" GotKeyboardFocus="Port_GotKeyboardFocus">Enter spesific Port/Any</TextBox>
+        <TextBlock Foreground="Gold"  FontSize="16" Canvas.Top="384" Canvas.Left="985">Direction:</TextBlock>
+        <TextBox Canvas.Top="410" Canvas.Left="983" Width="162" Background="#1A1D24" BorderBrush="Black" Foreground="Red" FontSize="16" Name="direction" GotKeyboardFocus="Direction_GotKeyboardFocus">Inbound/Outbound/Any</TextBox>
+        <TextBlock Foreground="Gold"  FontSize="16" Canvas.Top="438" Canvas.Left="985">Action:</TextBlock>
+        <TextBox Canvas.Top="464" Canvas.Left="983" Width="162" Background="#1A1D24" BorderBrush="Black" Foreground="Red" FontSize="16" Name="action" GotKeyboardFocus="Action_GotKeyboardFocus">Allow / Deny / VPN</TextBox>
+        <TextBlock Foreground="Gold"  FontSize="16" Canvas.Top="492" Canvas.Left="985">Device A:</TextBlock>
+        <TextBox Canvas.Top="518" Canvas.Left="983" Width="162" Background="#1A1D24" BorderBrush="Black" Foreground="Red" FontSize="16" Name="deva" GotKeyboardFocus="Devices_GotKeyboardFocus">1 / 2 / 3</TextBox>
+        <TextBlock Foreground="Gold"  FontSize="16" Canvas.Top="546" Canvas.Left="985">Device B:</TextBlock>
+        <TextBox Canvas.Top="572" Canvas.Left="983" Width="162" Background="#1A1D24" BorderBrush="Black" Foreground="Red" FontSize="16" Name="devb" GotKeyboardFocus="Devices_GotKeyboardFocus">1 / 2 / 3</TextBox>
+        <Button Canvas.Left="1069" Canvas.Top="616" Foreground="Gold" Background="#1A1D24" BorderBrush="#2A2F3C" Height="34" Width="76" FontSize="18" Click="Submit_Click">Submit</Button>
+        <Button Canvas.Left="983" Canvas.Top="616" Foreground="Gold" Background="#1A1D24" BorderBrush="#2A2F3C" Height="34" Width="76" FontSize="18" Click="Change_Click">Change</Button>
+        <ListBox Height="415" Width="978" Canvas.Top="164" Background="Transparent" BorderBrush="Transparent" FontSize="16" Foreground="Gold" Name="policylb">
+
+        </ListBox>
+        <TextBlock Canvas.Left="359" Canvas.Top="657" Foreground="Green" FontSize="14" Name="showmebaby" />
+        <Image Source="Pictures/Logo.png" Height="128" Width="492"/>
+    </Canvas>
+</Window>
