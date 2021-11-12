@@ -1,2 +1,2 @@
 # MirrorShield
-My final project in school - Firewall and VPN using libpcap and C#.
+My final project cyber graduation from 2018 - A dumb firewall and (sort of) VPN using libpcap and C#.
